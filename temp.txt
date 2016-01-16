@@ -1,0 +1,15 @@
+@Component
+public class SBAuthenticationFailureHandler implements AuthenticationFailureHandler {
+
+    @Override
+    public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
+        if(exception instanceof LockedException){
+            response.setStatus(HttpServletResponse.SC_CONFLICT);
+            response.getWriter().append("user already logged in, \n log out from previous session or wait for 15 minutes");
+        }else {
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            response.getWriter().append("wrong username or password");
+        }
+    }
+
+}

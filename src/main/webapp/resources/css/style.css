@@ -1,0 +1,30 @@
+
+body
+	{margin:0px 0px 0px 0px;}
+p{margin:0px 0px 0px 0px;}
+#header
+	{height:50px;
+	background-color:#11D6F5;
+	margin:0px 0px 0px 0px;}
+
+#container
+	{height:570px;
+	background-color:lightblue;
+	margin:0px 0px 0px 0px;}
+
+#details
+	{float:left;
+	margin:0px 0px 0px px;	}
+
+#txn
+	{float:center;
+	margin-top:0px;margin-bottom:300px;margin-left:400px;margin-right:400px;}
+
+#toolbar
+	{height:20px;
+	background-color:#11D6F5;
+	margin:0px 0px 0px 0px;}
+
+#footer
+	{background-color:#11D6F5;
+	margin:0px 0px 0px 0px;}

@@ -1,0 +1,26 @@
+
+body
+	{margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;}
+
+#header
+	{height:50px;
+	background-color:#11D6F5;
+	margin-bottom:0px;margin-left:0px;margin-right:0px;}
+
+#container
+	{height:600px;
+	background-color:lightblue !important;
+	margin-bottom:0px;margin-left:0px;margin-right:0px;}
+
+#registration
+	{float:center;
+	margin-top:0px;margin-bottom:300px;margin-left:400px;margin-right:400px;}
+
+#toolbar
+	{height:20px;
+	background-color:#11D6F5;
+	margin-bottom:0px;margin-left:0px;margin-right:0px;}
+
+#footer
+	{background-color:#11D6F5;
+	margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;}

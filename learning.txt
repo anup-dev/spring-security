@@ -1,0 +1,32 @@
+1) Hibernate NamingStrategy (org.hibernate.cfg.ImprovedNamingStrategy) is Deprecated and not working in Hibernate 5.x
+   with spring 4.2.0.RELEASE
+
+2) The Dataconfig class must have a method named entityManagerFactory() because spring by-default looks for this method
+   if name changed spring gives error
+
+3) For Spring JDBCTemplate org.springframework.jdbc.core package is must.
+
+  Optionals (refer - http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/jdbc.html)
+
+  a) The org.springframework.jdbc.datasource package contains a utility class for easy DataSource access, and various
+     simple DataSource implementations that can be used for testing and running unmodified JDBC code outside of a Java
+     EE container.
+
+  b) The org.springframework.jdbc.object package contains classes that represent RDBMS queries, updates, and
+     stored procedures as thread-safe, reusable objects.
+
+  c) The org.springframework.jdbc.support package provides SQLException translation functionality and some utility
+     classes. Exceptions thrown during JDBC processing are translated to exceptions defined in the
+     org.springframework.dao package. This means that code using the Spring JDBC abstraction layer does not need to
+     implement JDBC or RDBMS-specific error handling.
+
+4) for accessing static or html files in spring we have to configure resource handler. And if the folder having html files donot have
+   sub-folders then correct way to registering handler is
+    a) registry.addResourceHandler("/resources/**").addResourceLocations("/templates/");
+    b) registry.addResourceHandler("/**/*").addResourceLocations("/templates/");
+
+    this is wrong -> registry.addResourceHandler("/**/*").addResourceLocations("/templates/*");
+    but works if u have subfolders inside templates.
+
+    option b will make the resource to access from root like localhost:8080/help.html
+    option a will have access as localhost:8080/resources/help.html
