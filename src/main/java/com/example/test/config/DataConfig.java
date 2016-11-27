@@ -33,7 +33,7 @@ public class DataConfig {
         ds.setDriverClassName("com.mysql.jdbc.Driver");
         ds.setUrl("jdbc:mysql://localhost:3306/test_db");
         ds.setUsername("root");
-        ds.setPassword("anup");
+        ds.setPassword("admin");
         return ds;
     }
 

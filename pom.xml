@@ -158,6 +158,22 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.12</version>
         </dependency>
+
+        <!-- apache poi to read excel file -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.9</version>
+        </dependency>
+
+
+
     </dependencies>
     <build>
 
